@@ -12,7 +12,6 @@ body{
   background-color: rgb(54, 54, 54);
   min-height: 100vh;
   max-height: fit-content;
-  width: 100vw !important;
 }
 
 hr {
@@ -26,25 +25,27 @@ input {
 }
 
 .caption {
-  font-size: 0.70rem;
+  font-size: 0.70em;
 }
 
 .label-checkbox {
-  font-size: 1rem;
+  font-size: 1em;
 }
 
-.total {
+/* .total {
   display: block;
   background-color: #fff;
   width: 20px;
   height: 20px;
-}
+} */
 
 @media (max-width: 768px) {
   .caption {
-    font-size: 1rem;
+    font-size: 1em;
+    width: 140px;
+    text-align: left;
   }
   .label-checkbox {
-    font-size: 1.5rem;
+    font-size: 1.25em;
   }
 }
