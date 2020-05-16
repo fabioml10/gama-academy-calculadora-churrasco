@@ -13,31 +13,30 @@
 
 <body class="container">
 
-
-
-  <header class="text-center text-white pt-5 mb-5">
+  <header class="text-center text-white my-5">
     <h5>GAMA ACADEMY</h5>
     <h2>Calculadora de Churrasco</h2>
   </header>
 
-  <main>
+  <main class="text-white">
 
-    <div class="row text-white text-center text-md-right">
-      <div class="col-md-2 offset-md-1">
+    <div class="row">
+
+      <div class="col-12 col-md-2 offset-md-2 text-center">
         <h4>Comidas</h4>
       </div>
 
-      <div class="col-md-2 d-flex flex-row flex-md-column-reverse align-items-center px-4">
+      <div class="col-12 col-md-2 d-flex align-items-center flex-md-column-reverse mb-2 mb-md-0">
         <label class="caption" for="mulheres-qnt">Mulheres</label>
-        <input class="form-control" id="mulheres-qnt" type="number" />
+        <input class="form-control" id="mulheres-qnt" type="number">
       </div>
 
-      <div class="col-md-2 d-flex flex-row flex-md-column-reverse align-items-center px-4">
+      <div class="col-12 col-md-2 d-flex align-items-center flex-md-column-reverse mb-2 mb-md-0">
         <label class="caption" for="homens-qnt">Homens</label>
         <input class="form-control" id="homens-qnt" type="number" />
       </div>
 
-      <div class="col-md-2 d-flex flex-row flex-md-column-reverse align-items-center px-4">
+      <div class="col-12 col-md-2 d-flex align-items-center flex-md-column-reverse mb-2 mb-md-0">
         <label class="caption" for="criancas-qnt">Crianças</label>
         <input class="form-control" id="criancas-qnt" type="number" />
       </div>
@@ -45,91 +44,83 @@
     </div>
 
     <div class="row text-white my-3">
-      <div class="col-md-12 offset-md-3 pl-4">
+      <div class="col-8 offset-4">
         <input id="acompanhamentos" type="checkbox" />
         <label class="label-checkbox" for="acompanhamentos">acompanhamentos</label>
       </div>
     </div>
 
-    <div class="row text-white mb-5">
-
-      <div class="col-md-2 offset-md-1 text-center text-md-right">
+    <div class="row">
+      <div class="col-12 col-md-2 offset-md-2 text-center">
         <h4>Bebidas</h4>
       </div>
 
-      <div class="col-md-2 d-flex flex-row flex-md-column-reverse align-items-center px-4">
+      <div class="col-12 col-md-2 d-flex align-items-center flex-md-column-reverse mb-2 mb-md-0">
         <label class="caption" for="bebidas-alcoolicas">Bebidas alcoolicas</label>
         <input class="form-control" id="bebidas-alcoolicas" type="number" />
       </div>
 
-      <div class="col-md-2 d-flex flex-row flex-md-column-reverse align-items-center px-4">
+      <div class="col-12 col-md-2 d-flex align-items-center flex-md-column-reverse mb-2 mb-md-0">
         <label class="caption" for="bebidas-nao-alcoolicas">Bebidas não alcoolicas</label>
         <input class="form-control" id="bebidas-nao-alcoolicas" type="number" />
       </div>
 
     </div>
 
-    <div class="row justify-content-center">
+    <div class="row justify-content-center my-5">
       <button class="btn btn-light" id="botaoCalcular">Calcular</button>
     </div>
 
-    <div class="col-md-8 offset-md-2 text-white mt-5">
+
+    <div class="row">
+
+      <div class="col-12">
 
       <hr>
-
       <div class="col-md-12 text-center">
         <span>Totais<span>
       </div>
-
       <hr>
 
-      <div class="row">
+      <div class="col-12">
+        <div class="d-flex">
+          <span>Pessoas:</span>
+          <span id="total-pessoas" class="total">Xx</span>
+        </div>
+      </div>
 
-        <div class="col-md-12">
-          <div class="d-flex">
-            <span>Pessoas:</span>
-            <span id="total-pessoas" class="total">Xx</span>
-          </div>
+      <div class="col-12 col-md-6">
+        <div class="d-flex">
+          <span id="total-carne">Carne:</span>
+          <span class="total">Xx</span>
         </div>
 
-        <div class="col-md-6">
-          <div class="d-flex">
-            <span id="total-carne">Carne:</span>
-            <span class="total">Xx</span>
-          </div>
+        <div class="d-flex">
+          <span id="total-acompanhamento">Acompahnamentos: </span>
+          <span class="total">Xx</span>
+        </div>
+      </div>
 
-          <div class="d-flex">
-            <span id="total-acompanhamento">Acompahnamentos: </span>
-            <span class="total">Xx</span>
-          </div>
+      <div class="col-12 col-md-6">
+        <div class="d-flex">
+          <span id="total-bebidas-alcoolicas">Bebidas alcoolicas: </span>
+          <span class="total">Xx</span>
         </div>
 
-        <div class="col-md-6">
-          <div class="d-flex">
-            <span id="total-bebidas-alcoolicas">Bebidas alcoolicas: </span>
-            <span class="total">Xx</span>
-          </div>
-
-          <div class="d-flex">
-            <span id="total-bebidas-nao-alcoolicas">Bebidas não alcoolicas: </span>
-            <span class="total">Xx</span>
-          </div>
+        <div class="d-flex">
+          <span id="total-bebidas-nao-alcoolicas">Bebidas não alcoolicas: </span>
+          <span class="total">Xx</span>
         </div>
-
       </div>
 
       <hr>
 
-
-
-      <div>
-      </div>
     </div>
 
   </main>
 
 
-  <script src="./src/main.js"></script>
+  <!-- <script src="./src/main.js"></script> -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
     crossorigin="anonymous"></script>
@@ -140,5 +131,6 @@
     integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
     crossorigin="anonymous"></script>
 </body>
+
 
 </html>
